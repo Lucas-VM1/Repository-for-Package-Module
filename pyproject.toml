@@ -1,0 +1,65 @@
+"""I am again going to use the DeepElectrodeMapper data preparation step as an example."""
+[project]
+name = "eeg-preprocessing-pipeline"
+version = "0.1.0"
+description = "3D EEG scan preprocessing and point cloud standardization for PointNet++ training."
+authors = [
+    { name = "Lucas Vidal Murakami", email = "lucas@murakami.com.br" }
+]
+license = { file = "LICENSE.txt" }
+readme = "README.md"
+requires-python = ">=3.8"
+
+keywords = ["EEG", "point cloud", "3D mesh", "neuroimaging", "pyvista", "open3d", "machine learning"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License"
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "pyvista>=0.37.0",
+    "numpy>=1.22",
+    "nibabel>=5.2.0",
+    "pydicom>=2.4.0",
+    "scikit-image>=0.22.0",
+    "open3d>=0.18.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pytest",
+    "mypy",
+    "pre-commit"
+]
+
+[project.urls]
+homepage = "https://github.com/lucasvm/Repository-for-Package-Module"
+documentation = "https://github.com/lucasvm/Repository-for-Package-Module"
+repository = "https://github.com/lucasvm/Repository-for-Package-Module"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | build
+    | dist
+  )/
+)
