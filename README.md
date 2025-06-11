@@ -14,7 +14,7 @@ Here I need to create content explaining how the code actually works:
 Here I would need to provide what is necessary for someone who want to use the project's code and navigate them to the process of using the code (probably via links to other documents):
 - What needs to be installed and how to install it.
 - If data needs conversion or preparation, so it fits the project input specifications, I need to present how to prepare and/or transform the possible different kinds of data, that other people might have and could be used in this project, into the particular input requirements.
-- Intructions on how to actually use the code, so present perhaps steps, examples, on what modules to use for specific steps, so that the user is able to use the code more easily more easily.
+- Intructions on how to actually use the code, so present perhaps steps, examples, on what modules to use for specific steps, so that the user is able to use the code more easily.
 
 ## Further resources
 Here I could provide more resources that could be referenced for specific cases, or if one want to dive into a more specific part of the project and get a deeper understanding of a concept or implementation for example.
