@@ -1,25 +1,25 @@
 ---
 type: "project" # DON'T TOUCH THIS ! :)
-date: "2020-05-16" # Date you first upload your project.
-# Title of your project (we like creative title)
-title: "This is an example project page which serves as a template"
+date: "2025-05-20" # Date you first upload your project.
+# Deep Electrode Mapper: Using Deep Learning to Localize EEG Electrodes' Coordinates
 
 # List the names of the collaborators within the [ ]. If alone, simple put your name within []
-names: [Samuel Guay, Pierre Bellec]
+names: [Joel P. Diaz-Fong, Lucas Vidal Murakami, Aijia Ivy Zhong]
 
 # Your project GitHub repository URL
-github_repo: https://github.com/PSY6983-2021/project_template
-
-# If you are working on a project that has website, indicate the full url including "https://" below or leave it empty.
-website:
+github_repo: https://github.com/JOEwithanL/DeepElectrodeMapper
 
 # List +- 4 keywords that best describe your project within []. Note that the project summary also involves a number of key words. Those are listed on top of the [github repository](https://github.com/PSY6983-2021/project_template), click `manage topics`.
 # Please only lowercase letters
-tags: [project, github, markdown, brainhack]
+tags: [electrode localization, deep learning, clustering, preprocessing tools]
 
-# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects..
+# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects.
 
-summary: "Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BHS [website](https://psy6983.brainhackmtl.org/project)."
+summary: "Accurate source localization in EEG requires electrode's coordinates. However, currently this process requires skill and experience in dealing with different methods and softwares, which can be expensive, laborious and time consuming (Tveter et al., 2024). The Deep Electrode Mapper’s objective is to solve the electrodes’ localization issue by implementing deep learning to segment the electrodes from multiple image formats and find their coordinates via clustering. Currently the project is still in progress, and its development will be share via its repository. 
+
+References:
+
+Tveter, M., Tveitstøl, T., Nygaard, T., Kulashekhar, S., Bruña, R., Hammer, H. L., Hatlestad-Hall, C., & Haraldsen, I. R. H. (2024). EEG electrodes and where to find them: automated localization from 3D scans. Journal of Neural Engineering, 21(5), 056022."
 
 # If you want to add a cover image (listpage and image in the right), add it to your directory and indicate the name
 # below with the extension.
