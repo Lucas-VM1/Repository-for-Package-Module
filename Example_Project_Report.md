@@ -31,7 +31,19 @@ image: ""
 
 ### Background
 
-Inspired by the [Recurse Centre](https://www.recurse.com/) initiative (formally known as the "hacker school"), Brainhack School was established in 2018 with the mission to train students from multidisciplinary backgrounds to a panoply of reproducible tools for neural data science, using a project-based approach. Following an initial 3-weeks long pilot, a 4th week was added with an intensive bootcamp, so that students could choose what tools to learn more deeply in their projects. As the course became integrated in standard curriculum at different universities, the formula seemed to be working. In order to streamline the different stages of the project, some standard template and milestones needed to be incorporated in a github-based workflow. The "project template" project (which is also our first BHS meta-project) aims at establishing such a standardized template. You can check the following [video](https://youtu.be/PTYs_JFKsHI) where Pierre Bellec gives an overview of the Brainhack school.
+When using EEG for clinical or research analysis of brain activity the problem of associating a recording to a specific brain region (i.e., source localization) needs to be addressed for meaningful analysis. Although dependent on some variables, knowing the coordinates of the electrodes (i.e., where the signal is being recorded) precisely and accurately is central for source localization (Hirth et al., 2020). However, currently getting electrodes' coordinates are either time-consuming, requiring manual labeling of each electrode, or using specilzed software that are expensive to use (Tveter et al., 2024), adding to the skills and experience required in either method. In addition, there are multiple file formats that can be used for extracting the electrodes' coordinates, for example, MRI volumes (Pinte et al., 2021), 3D scans and photogrammetry (Hirth et al., 2020). Therefore, having a a pipeline that is less labour intensive and expensive, while accounting for the multiple set-ups and file formats would be an ideal imporvement in the process of electrodes' localization.
+There has been development in improving the electrodes' localization process, for example pipeline using phones as portable scanners, algorithms that predict other electrode coordinates based on a smaller subset for multiple channels' setups (Hirth et al., 2020), and even the usage of deep learning to localize the coordinates from MRI scans (Pinte et al., 2021). 
+In light of such developments, this project aimed to use deep learning to perform localization of electrodes, while accounting that the pipeline is generalizable for different file formats and set-ups, so it can be used inspite of the methodology used.
+
+References:
+
+Everitt, A., Richards, H., Song, Y., Smith, J., Kobylarz, E., Lukovits, T., Halter, R., & Murphy, E. (2023). EEG electrode localization with 3D iPhone scanning using point-cloud electrode selection (PC-ES). Journal of Neural Engineering, 20(6), 066033.
+
+Hirth, L. N., Stanley, C. J., Damiano, D. L., & Bulea, T. C. (2020). Algorithmic localization of high-density EEG electrode positions using motion capture. Journal of neuroscience methods, 346, 108919. https://doi.org/10.1016/j.jneumeth.2020.108919.
+
+Pinte, C., Fleury, M., & Maurel, P. (2021). Deep learning-based localization of EEG electrodes within MRI acquisitions. Frontiers in Neurology, 12, 644278.
+
+Tveter, M., Tveitstøl, T., Nygaard, T., Kulashekhar, S., Bruña, R., Hammer, H. L., Hatlestad-Hall, C., & Haraldsen, I. R. H. (2024). EEG electrodes and where to find them: automated localization from 3D scans. Journal of Neural Engineering, 21(5), 056022."
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PTYs_JFKsHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
